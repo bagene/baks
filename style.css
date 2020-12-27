@@ -1,0 +1,109 @@
+body{
+    font-family: 'Homemade Apple', cursive;
+    font-size:20px;
+    background:url('https://images.pexels.com/photos/172277/pexels-photo-172277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size:cover;
+    background-repeat:repeat;
+    color:#000;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+}
+
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+}
+
+.content {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 43px;
+  color: #2c3e50;
+  z-index: -1;
+}
+
+.card-container{
+    display: flex;
+    margin:0;
+    padding:0;
+  }
+  
+  .card{
+    text-align:center;
+    display:inline-block;
+    list-style:none;
+    position:relative;
+    border:solid 12px #fff;
+    background:#fff;
+    box-shadow:0 0 15px 0px #555;
+    transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    top:50px;
+  }
+  
+  
+  .card:hover{
+    top:0px;
+    opacity:0.5;
+  }
+  
+  .card:nth-child(1),.card:nth-child(5){
+      transform:rotate(10deg);
+  }
+  
+  .card:nth-child(2), .card:nth-child(6){
+      transform:rotate(0deg);
+  }
+  
+  .card:nth-child(3), .card:nth-child(7){
+      transform:rotate(-10deg);
+  }
+  
+  .card:nth-child(4), .card:nth-child(8){
+      transform:rotate(20deg);
+  }
+  
+  p{
+    margin:-15px 0 0 0;
+  }
+  
+  .light{
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    right:0;
+    width:700px;
+    height:700px;
+    background:#fff;
+    filter:blur(100px);
+    opacity:0.3;
+    pointer-events:none;
+  }
+
+  #bridge {
+    display: block;
+    margin: 0 auto;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg');
+    background-image: -webkit-image-set(url('https://gumlet.assettype.com/freepressjournal%2F2020-11%2F1068e38b-c464-4853-940c-28c5658fba75%2FEnHvMv5WEAECEYG.jpg?rect=0%2C0%2C1200%2C675&w=750&dpr=1.0') 1x, url('https://gumlet.assettype.com/freepressjournal%2F2020-11%2F1068e38b-c464-4853-940c-28c5658fba75%2FEnHvMv5WEAECEYG.jpg?rect=0%2C0%2C1200%2C675&w=750&dpr=1.0') 2x );
+    background-size: cover;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    cursor:  crosshair;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+  }
+  #bridgeContainer { 
+    text-align: center;
+  }
+  
+  figure {
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
